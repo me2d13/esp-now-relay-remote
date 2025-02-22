@@ -20,7 +20,7 @@ void setup() {
   setupLed();
   state.loadState();
   setupCrypto();
-  setupEspNow();
+  setupEspNow(); // must be called after state load as it registers peers
 }
 
 // PULSE: analogWrite(ledPin, fade); 0-255

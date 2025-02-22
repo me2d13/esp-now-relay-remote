@@ -16,6 +16,8 @@ struct StateItem
     pair_phase_t pairPhase;
     uint32_t counter;
     uint32_t pairId;
+    uint8_t channel;
+    bool peerRegistered; // not persisted
 };
 
 class PersState
