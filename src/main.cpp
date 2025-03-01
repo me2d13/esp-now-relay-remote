@@ -12,6 +12,10 @@
 
 void setup() {
   setupButtons();
+  pinMode(3, OUTPUT); // pinMode(3, OUTPUT);
+  digitalWrite(3, LOW); // digitalWrite(3, LOW); // Activate RF switch control
+  pinMode(14, OUTPUT); // pinMode(14, OUTPUT);
+  digitalWrite(14, HIGH); // digitalWrite(14, HIGH); // Use external antenna
   Serial.begin(SERIAL_BAUDRATE);
   loopButtons(); // read initial button states to handle deep sleep wakeup
   setupBattery();
